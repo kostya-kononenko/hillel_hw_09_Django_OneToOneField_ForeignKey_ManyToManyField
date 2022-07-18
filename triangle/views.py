@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import redirect, render
+
 from triangle.forms import FirstForm, GetForm
 
 
@@ -10,10 +11,9 @@ def form(request):
     if request.method == 'POST':
         first_form = FirstForm(request.POST)
         if first_form.is_valid():
-            print(first_form.cleaned_data)
             return redirect("index")
     else:
-        first_form = FirstForm(initial={"age" : 10})
+        first_form = FirstForm(initial={"age": 10})
     return render(
         request,
         "triangle/codebase_forms.html",
@@ -42,4 +42,3 @@ def get_form(request):
             "calc": calc,
         }
     )
-
