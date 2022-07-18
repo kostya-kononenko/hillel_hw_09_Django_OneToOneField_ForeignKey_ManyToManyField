@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get_Form</title>
+</head>
+<body>
+<h1>Form for calculating the hypotenuse</h1>
+
+{% if calc %}
+    <h2>The value of the hypotenuse {{ calc }}</h2>
+{% endif %}
+
+<form action="{% url 'getform' %}" method="get">
+    {{get_form.as_p}}
+    <input type="submit" name="submit" value="OK">
+</form>
+</body>
+</html>
