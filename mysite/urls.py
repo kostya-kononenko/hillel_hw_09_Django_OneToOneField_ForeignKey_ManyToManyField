@@ -20,6 +20,7 @@ from triangle.views import index
 
 urlpatterns = [
     path('', index, name='index'),
+    path('triangle/', include('triangle.urls')),
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
 ]
