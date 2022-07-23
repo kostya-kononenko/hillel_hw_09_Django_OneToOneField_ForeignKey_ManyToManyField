@@ -1,5 +1,7 @@
-from django.urls import path
 from codebase.views import crud_list, form
+
+from django.urls import path
+
 
 app_name = "codebase"
 urlpatterns = [

@@ -1,6 +1,7 @@
-from django.shortcuts import render, redirect
-from codebase.models import CRUD
 from codebase.forms import CRUDForm
+from codebase.models import CRUD
+
+from django.shortcuts import redirect, render
 
 
 def index(request):
