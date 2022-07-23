@@ -16,11 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
-from triangle.views import index
+from codebase.views import index
 
 urlpatterns = [
     path('', index, name='index'),
     path('triangle/', include('triangle.urls')),
+    path('codebase/', include('codebase.urls')),
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
 ]

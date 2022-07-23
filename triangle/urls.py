@@ -1,8 +1,7 @@
 from django.urls import path
 
-from triangle.views import form, get_form
+from triangle.views import get_form
 
 urlpatterns = [
-    path('form/', form, name='form'),
-    path('getform/', get_form, name='getform'),
+    path('getform/', get_form, name='get-form'),
 ]

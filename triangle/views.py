@@ -1,26 +1,6 @@
-from django.shortcuts import redirect, render
+from django.shortcuts import render
 
-from triangle.forms import FirstForm, GetForm
-
-
-def index(request):
-    return render(request, "triangle/index.html", {})
-
-
-def form(request):
-    if request.method == 'POST':
-        first_form = FirstForm(request.POST)
-        if first_form.is_valid():
-            return redirect("index")
-    else:
-        first_form = FirstForm(initial={"age": 10})
-    return render(
-        request,
-        "triangle/codebase_forms.html",
-        {
-            "first_form": first_form,
-        }
-    )
+from triangle.forms import GetForm
 
 
 def get_form(request):

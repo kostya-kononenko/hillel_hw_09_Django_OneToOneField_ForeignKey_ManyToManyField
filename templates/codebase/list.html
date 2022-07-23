@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crudlist</title>
+</head>
+<body>
+    <p>Crud List - {{ age }}</p>
+    <p><a href="{%  url 'index' %}">Home</a></p>
+    <p><a href="{% url 'codebase:crud-filter' age=1%}">Codebase list filter age is 1</a></p>
+    <ul>
+        {% for obj in objects %}
+            <li> {{ obj }} </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

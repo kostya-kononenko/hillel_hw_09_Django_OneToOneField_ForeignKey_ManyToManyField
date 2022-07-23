@@ -11,7 +11,7 @@
     <h2>The value of the hypotenuse {{ calc }}</h2>
 {% endif %}
 
-<form action="{% url 'getform' %}" method="get">
+<form action="{% url 'get-form' %}" method="get">
     {{get_form.as_p}}
     <input type="submit" name="submit" value="OK">
 </form>
