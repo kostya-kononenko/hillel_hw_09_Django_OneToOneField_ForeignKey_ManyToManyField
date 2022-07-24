@@ -1,7 +1,7 @@
-from codebase.forms import CRUDForm
+from codebase.forms import CRUDForm, CRUDModelForm
 from codebase.models import CRUD
 
-from django.shortcuts import redirect, render
+from django.shortcuts import get_object_or_404, redirect, render
 
 
 def index(request):
@@ -40,5 +40,42 @@ def form(request):
         "codebase/codebase_form.html",
         {
             "crud_form": crud_form
+        }
+    )
+
+
+def model_form(request):
+    if request.method == 'POST':
+        crud_form = CRUDModelForm(request.POST)
+        if crud_form.is_valid():
+            crud_form.save()
+            return redirect("codebase:index")
+    else:
+        crud_form = CRUDModelForm(initial={"age": 10})
+    return render(
+        request,
+        "codebase/codebase_model_form.html",
+        {
+            "crud_form": crud_form
+        }
+    )
+
+
+def model_update_form(request, pk):
+    obj = get_object_or_404(CRUD, pk=pk)
+    if request.method == 'POST':
+        crud_form = CRUDModelForm(request.POST, instance=obj)
+        if crud_form.is_valid():
+            crud_form.save()
+            return redirect("codebase:index")
+
+    else:
+        crud_form = CRUDModelForm(instance=obj)
+    return render(
+        request,
+        "codebase/codebase_update_form.html",
+        {
+            "crud_form": crud_form,
+            "obj": obj,
         }
     )

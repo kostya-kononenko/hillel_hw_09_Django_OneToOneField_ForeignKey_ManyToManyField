@@ -6,13 +6,12 @@
 </head>
 <body>
     <p>Crud List - {{ age }}</p>
-    <p><a href="{%  url 'index' %}">Home</a></p>
+    <p><a href="{%  url 'codebase:index' %}">Home</a></p>
     <p><a href="{% url 'codebase:crud-filter' age=1%}">Codebase list filter age is 1</a></p>
     <ul>
         {% for obj in objects %}
-            <li> {{ obj }} </li>
+            <li> <a href="{% url 'codebase:model-update-form' pk=obj.pk %}">{{ obj }}</a></li>
         {% endfor %}
     </ul>
-
 </body>
 </html>

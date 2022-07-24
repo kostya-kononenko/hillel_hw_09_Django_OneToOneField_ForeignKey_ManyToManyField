@@ -5,11 +5,13 @@
     <title>Form</title>
 </head>
 <body>
-    <h1>Forms</h1>
-<form action="{% url 'codebase:form' %}" method="post">
+    <h1>Update form for {{ obj }}</h1>
+<form action="{% url 'codebase:model-update-form' pk=obj.pk%}" method="post">
     {% csrf_token %}
     {{ crud_form.as_p }}
+
     <input type="submit" value="OK">
 </form>
+
 </body>
 </html>

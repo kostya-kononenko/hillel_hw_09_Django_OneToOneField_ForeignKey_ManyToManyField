@@ -7,11 +7,14 @@
 <body>
 <h1>Form for calculating the hypotenuse</h1>
 
+<p><a href="{%  url 'index' %}">Home</a></p>
+
+
 {% if calc %}
     <h2>The value of the hypotenuse {{ calc }}</h2>
 {% endif %}
 
-<form action="{% url 'get-form' %}" method="get">
+<form action="{% url 'triangle:get-form' %}" method="get">
     {{get_form.as_p}}
     <input type="submit" name="submit" value="OK">
 </form>

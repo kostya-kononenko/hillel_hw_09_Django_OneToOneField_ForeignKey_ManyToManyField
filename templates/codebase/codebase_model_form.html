@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Create forms</h1>
+<form action="{% url 'codebase:model-form' %}" method="post">
+    {% csrf_token %}
+    #{{ crud_form.non_field_errors }}
+    {% for hidden_field in crud_form.hidden_fields %}
+        {{ hidden_field.errors }}
+        {{ hidden_field }}
+    {% endfor %}
+
+    <table border="1">
+
+      <tr>
+          <th><label for ="{{ crud_form.name.id_for_label}}">{{ crud_form.name.label }}: </label></th>
+        <td>
+          {{ crud_form.name.errors }}
+          {{ crud_form.name }}
+        </td>
+      </tr>
+
+        <tr>
+        <th>{{ crud_form.level.label_tag }}</th>
+        <td>
+          {{ crud_form.level.errors }}
+          {{ crud_form.level }}
+        </td>
+      </tr>
+
+      <tr>
+        <th>{{ crud_form.age.label_tag }}</th>
+        <td>
+          {{ crud_form.age.errors }}
+          {{ crud_form.age }}
+        </td>
+      </tr>
+  </table>
+
+   {# {{ crud_form.as_p }} #}
+
+    <input type="submit" value="OK">
+</form>
+</body>
+</html>

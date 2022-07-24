@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crudlist_New</title>
+</head>
+<body>
+    <p>New crud List</p>
+    <p><a href="{%  url 'index' %}">Home</a></p>
+    <ul>
+        {% for obj in objects %}
+            <li> <a href="{% url 'triangle:first-model-update-form' pk=obj.pk %}">{{ obj }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

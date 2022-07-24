@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Create new forms</h1>
+    <p><a href="{%  url 'index' %}">Home</a></p>
+
+<form action="{% url 'triangle:first-model-form' %}" method="post">
+    {% csrf_token %}
+    #{{ first_form.non_field_errors }}
+    {% for hidden_field in first_form.hidden_fields %}
+        {{ hidden_field.errors }}
+        {{ hidden_field }}
+    {% endfor %}
+
+    <table border="1">
+
+      <tr>
+          <th>{{ first_form.first_name.label_tag }}</th>
+        <td>
+          {{ first_form.name.errors }}
+          {{ first_form.first_name }}
+        </td>
+      </tr>
+
+        <tr>
+        <th>{{ first_form.last_name.label_tag }}</th>
+        <td>
+          {{ first_form.last_name.errors }}
+          {{ first_form.last_name }}
+        </td>
+      </tr>
+
+      <tr>
+        <th>{{ first_form.email_field.label_tag }}</th>
+        <td>
+          {{ first_form.email_field.errors }}
+          {{ first_form.email_field }}
+        </td>
+      </tr>
+  </table>
+    <input type="submit" value="OK">
+</form>
+</body>
+</html>
