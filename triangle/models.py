@@ -9,3 +9,12 @@ class FirstForms(models.Model):
 
     def __str__(self):
         return self.first_name
+
+
+class FirstModelLog(models.Model):
+    path = models.CharField(max_length=30)
+    method = models.CharField(max_length=30)
+    time_stamp = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.path

@@ -1,5 +1,92 @@
 [
 {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2022-07-25T09:42:28.160Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "11",
+        "object_repr": "Oleg Tinkoff",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2022-07-25T09:49:14.831Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "What is you name?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"Kostya\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"Galina\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"Gleb\"}}]"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$OwvHTa4pLyrVFjA7NWcXdL$4p8pQr/cxvJE6arz+0H3ioNEQNBh6RYY0tNLXBHenm8=",
+        "last_login": "2022-07-25T09:35:30.185Z",
+        "is_superuser": true,
+        "username": "konstantin",
+        "first_name": "",
+        "last_name": "",
+        "email": "kkononenko@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-07-25T09:34:37.332Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "yd0uf35z2pacucqp5wxue2jvsppfwekr",
+    "fields": {
+        "session_data": ".eJxVjEsOwiAUAO_C2hA-D-pz6b5nII-fVA0kpV0Z764kXeh2ZjIv5mjfitt7Wt0S2YVJdvplnsIj1SHineqt8dDqti6ej4QftvO5xfS8Hu3foFAvY0vZwzSBtDaYjFrIJCBHg0apAFKBFkn4mNFYkGedlAX4SsQQyBIq9v4AvRA2uA:1oFuUs:98szq6xLu4seegqBNIrHn8evEPCRn7cOQcglpvS0_7U",
+        "expire_date": "2022-08-08T09:35:30.188Z"
+    }
+},
+{
+    "model": "polls.question",
+    "pk": 1,
+    "fields": {
+        "question_text": "What is you name?",
+        "pub_date": "2022-07-01T12:22:05Z"
+    }
+},
+{
+    "model": "polls.choice",
+    "pk": 1,
+    "fields": {
+        "question": 1,
+        "choice_text": "Kostya",
+        "votes": 0
+    }
+},
+{
+    "model": "polls.choice",
+    "pk": 2,
+    "fields": {
+        "question": 1,
+        "choice_text": "Galina",
+        "votes": 0
+    }
+},
+{
+    "model": "polls.choice",
+    "pk": 3,
+    "fields": {
+        "question": 1,
+        "choice_text": "Gleb",
+        "votes": 0
+    }
+},
+{
     "model": "triangle.firstforms",
     "pk": 1,
     "fields": {
@@ -190,6 +277,363 @@
     }
 },
 {
+    "model": "triangle.firstforms",
+    "pk": 20,
+    "fields": {
+        "first_name": "Ivan",
+        "last_name": "Petrovich",
+        "email_field": "ivanpetrovich@gmail.com",
+        "date": "2022-07-24T11:47:33.860Z"
+    }
+},
+{
+    "model": "triangle.firstforms",
+    "pk": 21,
+    "fields": {
+        "first_name": "Ivan",
+        "last_name": "Ivanon",
+        "email_field": "ivan@gmail.com",
+        "date": "2022-07-26T11:26:12.162Z"
+    }
+},
+{
+    "model": "triangle.firstforms",
+    "pk": 22,
+    "fields": {
+        "first_name": "gleb",
+        "last_name": "kononenko",
+        "email_field": "gleb@gmail.com",
+        "date": "2022-07-26T11:27:47.119Z"
+    }
+},
+{
+    "model": "triangle.firstforms",
+    "pk": 23,
+    "fields": {
+        "first_name": "Serg-87",
+        "last_name": "Ivanov",
+        "email_field": "ser@gmail.com",
+        "date": "2022-07-26T11:34:02.854Z"
+    }
+},
+{
+    "model": "triangle.firstforms",
+    "pk": 24,
+    "fields": {
+        "first_name": "Swed",
+        "last_name": "Swed",
+        "email_field": "swed@gmail.com",
+        "date": "2022-07-26T11:42:18.845Z"
+    }
+},
+{
+    "model": "triangle.firstforms",
+    "pk": 25,
+    "fields": {
+        "first_name": "Kostya",
+        "last_name": "Kononenko",
+        "email_field": "kostya@gmail.com",
+        "date": "2022-07-26T11:47:34.286Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 1,
+    "fields": {
+        "path": "/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T11:38:36.329Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 2,
+    "fields": {
+        "path": "/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T11:39:41.069Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 3,
+    "fields": {
+        "path": "/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T11:43:53.265Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 4,
+    "fields": {
+        "path": "/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T11:47:07.974Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 5,
+    "fields": {
+        "path": "/triangle/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T11:47:10.760Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 6,
+    "fields": {
+        "path": "/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T11:47:11.710Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 7,
+    "fields": {
+        "path": "/triangle/createform/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T11:47:12.639Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 8,
+    "fields": {
+        "path": "/triangle/createform/",
+        "method": "POST",
+        "time_stamp": "2022-07-26T11:47:34.278Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 9,
+    "fields": {
+        "path": "/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T11:47:34.291Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 10,
+    "fields": {
+        "path": "/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T11:56:26.853Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 11,
+    "fields": {
+        "path": "/admin/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T11:56:31.414Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 12,
+    "fields": {
+        "path": "/polls/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T11:57:00.592Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 13,
+    "fields": {
+        "path": "/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T11:57:05.018Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 14,
+    "fields": {
+        "path": "/triangle/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T11:57:09.124Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 15,
+    "fields": {
+        "path": "/triangle/first-model-form/23/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T11:57:11.669Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 16,
+    "fields": {
+        "path": "/triangle/first-model-form/23/",
+        "method": "POST",
+        "time_stamp": "2022-07-26T11:57:15.795Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 17,
+    "fields": {
+        "path": "/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T11:57:15.810Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 18,
+    "fields": {
+        "path": "/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:02:48.277Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 19,
+    "fields": {
+        "path": "/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:03:29.303Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 20,
+    "fields": {
+        "path": "/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:03:47.303Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 21,
+    "fields": {
+        "path": "/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:05:53.089Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 22,
+    "fields": {
+        "path": "/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:12:03.042Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 23,
+    "fields": {
+        "path": "/admin/triangle/firstmodellog/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:12:15.887Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 24,
+    "fields": {
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:12:15.944Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 25,
+    "fields": {
+        "path": "/admin/triangle/firstmodellog/1/change/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:12:21.127Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 26,
+    "fields": {
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:12:21.184Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 27,
+    "fields": {
+        "path": "/admin/triangle/firstmodellog/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:12:23.152Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 28,
+    "fields": {
+        "path": "/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:13:52.738Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 29,
+    "fields": {
+        "path": "/codebase/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:14:04.610Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 30,
+    "fields": {
+        "path": "/codebase/1/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:14:06.033Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 31,
+    "fields": {
+        "path": "/codebase/model-form/2/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:14:07.272Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 32,
+    "fields": {
+        "path": "/codebase/model-form/2/",
+        "method": "POST",
+        "time_stamp": "2022-07-26T12:14:15.056Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 33,
+    "fields": {
+        "path": "/codebase/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:14:15.069Z"
+    }
+},
+{
     "model": "codebase.crud",
     "pk": 1,
     "fields": {
@@ -203,8 +647,8 @@
     "model": "codebase.crud",
     "pk": 2,
     "fields": {
-        "name": "Oleg-254",
-        "age": 1,
+        "name": "Oleg-25489",
+        "age": 4,
         "level": "Ten",
         "date": "2022-07-21T15:07:05.896Z"
     }
@@ -287,16 +731,6 @@
         "age": 45,
         "level": "First-1",
         "date": "2022-07-23T10:26:19.667Z"
-    }
-},
-{
-    "model": "codebase.crud",
-    "pk": 11,
-    "fields": {
-        "name": "Oleg Tinkoff",
-        "age": 15,
-        "level": "Ten",
-        "date": "2022-07-23T14:30:04.624Z"
     }
 },
 {

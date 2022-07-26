@@ -8,8 +8,9 @@ class ChoiceInline(admin.TabularInline):
     extra = 3
 
 
+@admin.register(Question)
 class QuestionAdmin(admin.ModelAdmin):
-    list_display = ('question_text', 'pub_date', 'was_published_recently')
+    list_display = ('question_text', 'pub_date', 'was_published_recently', 'example')
 
     fieldsets = [
         (None,               {'fields': ['question_text']}),
@@ -20,7 +21,8 @@ class QuestionAdmin(admin.ModelAdmin):
 
     inlines = [ChoiceInline]
 
+    def example(self, obj, *args, **kwargs):
+        return 10
 
-admin.site.register(Question, QuestionAdmin)
 
 admin.site.register(Choice)
