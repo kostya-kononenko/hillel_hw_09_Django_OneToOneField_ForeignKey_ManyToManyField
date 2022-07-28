@@ -1,1 +1,1 @@
- Django forms
+OneToOneField, ForeignKey, ManyToManyField
