@@ -40,8 +40,6 @@ INSTALLED_APPS = [
     'polls',
     'triangle',
     'codebase',
-    'relations',
-    'agg',
     'catalog',
 ]
 
