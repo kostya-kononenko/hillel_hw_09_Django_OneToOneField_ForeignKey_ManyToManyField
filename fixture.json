@@ -90,7 +90,7 @@
     "model": "triangle.firstforms",
     "pk": 1,
     "fields": {
-        "first_name": "Константин",
+        "first_name": "Константин-1",
         "last_name": "Кононенко",
         "email_field": "kkononenko3@gmail.com",
         "date": "2022-07-23T15:45:56.953Z"
@@ -634,6 +634,141 @@
     }
 },
 {
+    "model": "triangle.firstmodellog",
+    "pk": 34,
+    "fields": {
+        "path": "/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:32:57.855Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 35,
+    "fields": {
+        "path": "/admin/triangle/firstmodellog/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:33:03.488Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 36,
+    "fields": {
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:33:03.565Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 37,
+    "fields": {
+        "path": "/admin/triangle/firstmodellog/35/change/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:33:07.374Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 38,
+    "fields": {
+        "path": "/admin/triangle/firstmodellog/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:33:08.874Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 39,
+    "fields": {
+        "path": "/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:33:48.882Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 40,
+    "fields": {
+        "path": "/admin/triangle/firstmodellog/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:33:55.816Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 41,
+    "fields": {
+        "path": "/admin/jsi18n/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:33:55.894Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 42,
+    "fields": {
+        "path": "/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:34:36.078Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 43,
+    "fields": {
+        "path": "/triangle/createform/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:34:38.179Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 44,
+    "fields": {
+        "path": "/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:34:39.850Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 45,
+    "fields": {
+        "path": "/triangle/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:34:40.877Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 46,
+    "fields": {
+        "path": "/triangle/first-model-form/1/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:34:42.062Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 47,
+    "fields": {
+        "path": "/triangle/first-model-form/1/",
+        "method": "POST",
+        "time_stamp": "2022-07-26T12:34:45.518Z"
+    }
+},
+{
+    "model": "triangle.firstmodellog",
+    "pk": 48,
+    "fields": {
+        "path": "/",
+        "method": "GET",
+        "time_stamp": "2022-07-26T12:34:45.534Z"
+    }
+},
+{
     "model": "codebase.crud",
     "pk": 1,
     "fields": {
@@ -761,6 +896,277 @@
         "age": 10,
         "level": "Second",
         "date": "2022-07-24T08:57:09.149Z"
+    }
+},
+{
+    "model": "relations.parts",
+    "pk": 1,
+    "fields": {
+        "name": "Whell"
+    }
+},
+{
+    "model": "relations.parts",
+    "pk": 2,
+    "fields": {
+        "name": "DVS"
+    }
+},
+{
+    "model": "relations.car",
+    "pk": 1,
+    "fields": {
+        "name": "Car_1",
+        "manufacturer": 1,
+        "parts": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "relations.car",
+    "pk": 2,
+    "fields": {
+        "name": "Car_2",
+        "manufacturer": 1,
+        "parts": [
+            1
+        ]
+    }
+},
+{
+    "model": "relations.car",
+    "pk": 3,
+    "fields": {
+        "name": "Car_3",
+        "manufacturer": 2,
+        "parts": [
+            2
+        ]
+    }
+},
+{
+    "model": "relations.car",
+    "pk": 4,
+    "fields": {
+        "name": "Car_4",
+        "manufacturer": 3,
+        "parts": []
+    }
+},
+{
+    "model": "relations.brand",
+    "pk": 1,
+    "fields": {
+        "name": "A",
+        "director": 1
+    }
+},
+{
+    "model": "relations.brand",
+    "pk": 2,
+    "fields": {
+        "name": "B",
+        "director": 2
+    }
+},
+{
+    "model": "relations.brand",
+    "pk": 3,
+    "fields": {
+        "name": "C",
+        "director": 3
+    }
+},
+{
+    "model": "relations.director",
+    "pk": 1,
+    "fields": {
+        "first_name": "A_name"
+    }
+},
+{
+    "model": "relations.director",
+    "pk": 2,
+    "fields": {
+        "first_name": "B_name"
+    }
+},
+{
+    "model": "relations.director",
+    "pk": 3,
+    "fields": {
+        "first_name": "C_name"
+    }
+},
+{
+    "model": "catalog.products",
+    "pk": 1,
+    "fields": {
+        "name_products": "wheat"
+    }
+},
+{
+    "model": "catalog.products",
+    "pk": 2,
+    "fields": {
+        "name_products": "rice"
+    }
+},
+{
+    "model": "catalog.products",
+    "pk": 3,
+    "fields": {
+        "name_products": "sunflower"
+    }
+},
+{
+    "model": "catalog.products",
+    "pk": 4,
+    "fields": {
+        "name_products": "potato"
+    }
+},
+{
+    "model": "catalog.clients",
+    "pk": 1,
+    "fields": {
+        "name": "Konstantin",
+        "client_city": 1,
+        "products": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "catalog.clients",
+    "pk": 2,
+    "fields": {
+        "name": "Ivan",
+        "client_city": 2,
+        "products": [
+            3
+        ]
+    }
+},
+{
+    "model": "catalog.clients",
+    "pk": 3,
+    "fields": {
+        "name": "Sergey",
+        "client_city": 4,
+        "products": [
+            2
+        ]
+    }
+},
+{
+    "model": "catalog.clients",
+    "pk": 4,
+    "fields": {
+        "name": "Pavel",
+        "client_city": 1,
+        "products": [
+            1
+        ]
+    }
+},
+{
+    "model": "catalog.clients",
+    "pk": 5,
+    "fields": {
+        "name": "Petro",
+        "client_city": 3,
+        "products": []
+    }
+},
+{
+    "model": "catalog.clients",
+    "pk": 6,
+    "fields": {
+        "name": "Maksim",
+        "client_city": 4,
+        "products": []
+    }
+},
+{
+    "model": "catalog.clients",
+    "pk": 7,
+    "fields": {
+        "name": "Olga",
+        "client_city": 2,
+        "products": []
+    }
+},
+{
+    "model": "catalog.clients",
+    "pk": 8,
+    "fields": {
+        "name": "Sveta",
+        "client_city": 1,
+        "products": []
+    }
+},
+{
+    "model": "catalog.city",
+    "pk": 1,
+    "fields": {
+        "name": "Kiev",
+        "provider": 1
+    }
+},
+{
+    "model": "catalog.city",
+    "pk": 2,
+    "fields": {
+        "name": "Lviv",
+        "provider": 2
+    }
+},
+{
+    "model": "catalog.city",
+    "pk": 3,
+    "fields": {
+        "name": "Dnipro",
+        "provider": 3
+    }
+},
+{
+    "model": "catalog.city",
+    "pk": 4,
+    "fields": {
+        "name": "Odessa",
+        "provider": 4
+    }
+},
+{
+    "model": "catalog.provider",
+    "pk": 1,
+    "fields": {
+        "name_provider": "Provider_01"
+    }
+},
+{
+    "model": "catalog.provider",
+    "pk": 2,
+    "fields": {
+        "name_provider": "Provider_02"
+    }
+},
+{
+    "model": "catalog.provider",
+    "pk": 3,
+    "fields": {
+        "name_provider": "Provider_03"
+    }
+},
+{
+    "model": "catalog.provider",
+    "pk": 4,
+    "fields": {
+        "name_provider": "Provider_04"
     }
 }
 ]
